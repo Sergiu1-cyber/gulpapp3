@@ -1,0 +1,14 @@
+extends layout/app
+
+block page
+  include chunck/header
+  h1.title Home page Pug
+  p reinnoire !
+  picture
+    img(src="img/med.jpg")
+  ul.news
+    each item in news
+      li= item.name
+  picture
+    img(src="img/file.png")
+  include chunck/footer
